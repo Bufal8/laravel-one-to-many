@@ -36,9 +36,9 @@
             <input type="text" name="difficulty" id="difficulty">
             <br>
 
-            <label for="type">Type</label>
+            <label for="type_id">Type</label>
             <br>
-            <select name="type" id="type">
+            <select name="type_id" id="type_id">
                 @foreach ($types as $type)
                     <option value="{{ $type -> id }}">
                         {{ $type -> name }}

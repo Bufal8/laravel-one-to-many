@@ -21,6 +21,10 @@ class LoggedController extends Controller
     public function store(Request $request){
 
         $data = $request -> all();
-        dd($data);
+
+
+        $project = Project :: create($data);
+
+        return redirect() -> route('project.show', $project -> id);
     }
 }
