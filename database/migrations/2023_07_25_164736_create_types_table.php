@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('types', function (Blueprint $table) {
             $table->id();
 
-            $table -> string('name', 64) -> unique();
-            $table -> string('description') -> nullable();
+            $table -> string('name', 64);
+            $table -> text('description') -> nullable();
 
             $table->timestamps();
         });

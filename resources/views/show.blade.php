@@ -12,6 +12,9 @@
                <u><i>Difficulty:</i></u> <strong>{{$project -> difficulty}}</strong>
             </span>
             <span class="col">
+                <u><i>Type:</i></u> <strong>{{$project -> type -> name}}</strong>
+             </span>
+            <span class="col">
                <u><i>Start date:</i></u> {{$project -> start_date}} <br>
                <u><i>End date:</i></u> {{$project -> end_date}}
             </span>
